@@ -4,7 +4,7 @@
  * @Github: https://github.com/dollarkillerx
  * @Date: Create in 下午5:47 2019/12/9
  */
-package base64
+package obbase64
 
 import (
 	"crypto/md5"

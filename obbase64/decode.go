@@ -4,10 +4,9 @@
  * @Github: https://github.com/dollarkillerx
  * @Date: Create in 下午5:52 2019/12/9
  */
-package base64
+package obbase64
 
 import (
-	"log"
 	"strconv"
 	"strings"
 
@@ -51,7 +50,6 @@ func Decode(key string, data string) ([]byte, error) {
 func Encode(key string, data []byte) (string, error) {
 	keys := strings.Split(key, ",")
 	encode := Base64Encode(data)
-	log.Println(encode)
 
 	for _, k := range keys {
 		i, e := strconv.Atoi(k)
